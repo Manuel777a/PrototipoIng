@@ -1,0 +1,9 @@
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.exe.config
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.exe
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.pdb
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csprojResolveAssemblyReference.cache
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.Form1.resources
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.Properties.Resources.resources
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.GenerateResource.Cache
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.exe
+D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.pdb

@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Ingenieria_Software_Prototipo
 {
-    public partial class Form1 : Form
+    public partial class GUILogin : Form
     {
-        public Form1()
+        public GUILogin()
         {
             InitializeComponent();
+        }
+
+        private void buttIngresar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ingresar");
+        }
+
+        private void buttSalir_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Salir");
         }
     }
 }

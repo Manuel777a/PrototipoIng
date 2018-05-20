@@ -7,3 +7,12 @@ D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Pr
 D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.GenerateResource.Cache
 D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.exe
 D:\Universidad de Ibagué\Matematicas Discretas\Recursion\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.pdb
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.exe.config
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.exe
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.pdb
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.exe
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.pdb
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUILogin.resources
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.Properties.Resources.resources
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.GenerateResource.Cache

@@ -25,3 +25,6 @@ C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingeni
 C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUILogin.resources
 C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.Properties.Resources.resources
 C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.GenerateResource.Cache
+C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.exe.config
+C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.exe
+C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.pdb

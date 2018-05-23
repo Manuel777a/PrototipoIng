@@ -49,11 +49,26 @@ namespace Ingenieria_Software_Prototipo
         }
 
         //realizar el metodo buscarJurado
-
+        public Jurado buscarJurado(String pCedula)
+        {
+            Jurado aux = null;
+            for(int i=0;i < jurados.Count;i++)
+            {
+                if(jurados[i].darCedula().Equals(pCedula))
+                {
+                    aux = jurados[i];
+                    break;
+                }
+            }
+            return aux;
+        }
         public void agregarEquipo(Equipo equipo)
         {
             equipos.Add(equipo);
         }
-
+        public void agregarJurado(Jurado jurado)
+        {
+            jurados.Add(jurado);
+        }
     }
 }

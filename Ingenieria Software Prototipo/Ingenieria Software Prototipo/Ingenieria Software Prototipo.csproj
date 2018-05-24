@@ -48,6 +48,24 @@
   <ItemGroup>
     <Compile Include="Equipo.cs" />
     <Compile Include="Estudiante.cs" />
+    <Compile Include="GUIAdministrativos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIAdministrativos.Designer.cs">
+      <DependentUpon>GUIAdministrativos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIEstudiantes.Designer.cs">
+      <DependentUpon>GUIEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIJurado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIJurado.Designer.cs">
+      <DependentUpon>GUIJurado.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUILogin.cs">
       <SubType>Form</SubType>
     </Compile>

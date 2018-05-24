@@ -52,6 +52,12 @@ namespace Ingenieria_Software_Prototipo
             estudiantes[2] = stud1;
             estudiantes[3] = stud1;
         }
+        private int myVar;
+
+        public Estudiante[] darEstudiantes 
+        {
+            get { return estudiantes; }
+        }
 
 
     }

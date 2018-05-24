@@ -12,7 +12,6 @@ namespace Ingenieria_Software_Prototipo
         private String nombre;
         private String cedula;
         private List<TrabajoDeGrado> TrabajosDeGrado;
-
         public Jurado(String pNombre, String pCedula)
         {
             nombre = pNombre;
@@ -35,9 +34,6 @@ namespace Ingenieria_Software_Prototipo
         public List<TrabajoDeGrado> darTrabajosDeGrado()
         {
             return TrabajosDeGrado;
-        }
-
-        
-
+        }        
     }
 }

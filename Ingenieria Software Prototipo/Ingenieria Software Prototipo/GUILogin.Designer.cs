@@ -109,6 +109,7 @@
             // 
             // textBoxUsuario
             // 
+            this.textBoxUsuario.AcceptsTab = true;
             this.textBoxUsuario.Location = new System.Drawing.Point(101, 9);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(121, 20);

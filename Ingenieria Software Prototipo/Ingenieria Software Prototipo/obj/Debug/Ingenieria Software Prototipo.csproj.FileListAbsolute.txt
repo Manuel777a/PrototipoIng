@@ -25,3 +25,13 @@ C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingeni
 C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUILogin.resources
 C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.Properties.Resources.resources
 C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.exe.config
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.exe
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.pdb
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.exe
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.pdb
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUIAdministrador.resources
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUILogin.resources
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.Properties.Resources.resources
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.GenerateResource.Cache

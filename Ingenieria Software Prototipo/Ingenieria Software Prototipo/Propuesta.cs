@@ -19,7 +19,7 @@ namespace Ingenieria_Software_Prototipo
 
         public enum Calificaciones
         {
-            Aprovada,
+            Aprobada,
             DevueltaParaCorreciones,
             NoAceptada
         }

@@ -35,3 +35,6 @@ C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ing
 C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUILogin.resources
 C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.Properties.Resources.resources
 C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Gabriel\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.ResolveComReference.cache

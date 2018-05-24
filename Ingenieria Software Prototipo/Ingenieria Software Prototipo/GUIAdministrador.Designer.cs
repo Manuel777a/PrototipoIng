@@ -69,10 +69,13 @@
             this.cbModalidadTrabajo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtTituloTrabajo = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.gbEquipo.SuspendLayout();
             this.gbJurado.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -127,7 +130,7 @@
             this.gbEquipo.Controls.Add(this.txtCodigoEst);
             this.gbEquipo.Controls.Add(this.btnConsultarTrabajoFinal);
             this.gbEquipo.Controls.Add(this.btnConsultarPropuesta);
-            this.gbEquipo.Location = new System.Drawing.Point(12, 12);
+            this.gbEquipo.Location = new System.Drawing.Point(38, 90);
             this.gbEquipo.Name = "gbEquipo";
             this.gbEquipo.Size = new System.Drawing.Size(499, 65);
             this.gbEquipo.TabIndex = 5;
@@ -143,7 +146,7 @@
             this.gbJurado.Controls.Add(this.txtCodigoJurado1);
             this.gbJurado.Controls.Add(this.labCedula);
             this.gbJurado.Controls.Add(this.btnAsignarJurados);
-            this.gbJurado.Location = new System.Drawing.Point(13, 478);
+            this.gbJurado.Location = new System.Drawing.Point(39, 556);
             this.gbJurado.Name = "gbJurado";
             this.gbJurado.Size = new System.Drawing.Size(498, 102);
             this.gbJurado.TabIndex = 6;
@@ -214,7 +217,7 @@
             this.groupBox1.Controls.Add(this.cbModalidadPropuesta);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.txtTituloPropuesta);
-            this.groupBox1.Location = new System.Drawing.Point(13, 83);
+            this.groupBox1.Location = new System.Drawing.Point(39, 161);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(498, 165);
             this.groupBox1.TabIndex = 20;
@@ -359,7 +362,7 @@
             this.groupBox2.Controls.Add(this.cbModalidadTrabajo);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.txtTituloTrabajo);
-            this.groupBox2.Location = new System.Drawing.Point(13, 254);
+            this.groupBox2.Location = new System.Drawing.Point(39, 332);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(498, 201);
             this.groupBox2.TabIndex = 21;
@@ -490,12 +493,35 @@
             this.txtTituloTrabajo.Size = new System.Drawing.Size(264, 20);
             this.txtTituloTrabajo.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Ingenieria_Software_Prototipo.Properties.Resources.Captura;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(176, 76);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(190, 34);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(417, 25);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "PLATAFORMA TRABAJOS DE GRADO";
+            // 
             // GUIAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 614);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(619, 614);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbJurado);
             this.Controls.Add(this.gbEquipo);
@@ -509,7 +535,9 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -556,5 +584,7 @@
         private System.Windows.Forms.TextBox txtTituloTrabajo;
         private System.Windows.Forms.Button btnActualizarPropuesta;
         private System.Windows.Forms.Button btnActualizarTrabajo;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label14;
     }
 }

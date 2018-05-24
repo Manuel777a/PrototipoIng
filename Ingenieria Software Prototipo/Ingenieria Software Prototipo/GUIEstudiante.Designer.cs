@@ -41,6 +41,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtNom3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxProp = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
             this.buttonExaminar = new System.Windows.Forms.Button();
             this.dtpFechaEntrega = new System.Windows.Forms.DateTimePicker();
@@ -57,7 +59,9 @@
             this.btnSubirPropuesta = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxTrabajo = new System.Windows.Forms.TextBox();
             this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
+            this.label17 = new System.Windows.Forms.Label();
             this.btnExaminarT = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
@@ -72,10 +76,6 @@
             this.txtTitTrabajoGrado = new System.Windows.Forms.TextBox();
             this.btnSubirTrabajo = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.gbEquipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
@@ -112,7 +112,7 @@
             // 
             // txtNom2
             // 
-            this.txtNom2.Location = new System.Drawing.Point(536, 55);
+            this.txtNom2.Location = new System.Drawing.Point(140, 54);
             this.txtNom2.Name = "txtNom2";
             this.txtNom2.ReadOnly = true;
             this.txtNom2.Size = new System.Drawing.Size(238, 20);
@@ -146,7 +146,7 @@
             // 
             // txtNom4
             // 
-            this.txtNom4.Location = new System.Drawing.Point(140, 51);
+            this.txtNom4.Location = new System.Drawing.Point(536, 54);
             this.txtNom4.Name = "txtNom4";
             this.txtNom4.ReadOnly = true;
             this.txtNom4.Size = new System.Drawing.Size(238, 20);
@@ -171,7 +171,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxProp);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.axAcroPDF1);
             this.groupBox1.Controls.Add(this.buttonExaminar);
@@ -193,6 +193,24 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Propuesta de Grado";
+            // 
+            // textBoxProp
+            // 
+            this.textBoxProp.Enabled = false;
+            this.textBoxProp.Location = new System.Drawing.Point(24, 207);
+            this.textBoxProp.Multiline = true;
+            this.textBoxProp.Name = "textBoxProp";
+            this.textBoxProp.Size = new System.Drawing.Size(415, 61);
+            this.textBoxProp.TabIndex = 17;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(21, 191);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(81, 13);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "&Observaciones:";
             // 
             // axAcroPDF1
             // 
@@ -343,7 +361,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBoxTrabajo);
             this.groupBox2.Controls.Add(this.axAcroPDF2);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.btnExaminarT);
@@ -366,6 +384,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Trabajo de Grado";
             // 
+            // textBoxTrabajo
+            // 
+            this.textBoxTrabajo.Enabled = false;
+            this.textBoxTrabajo.Location = new System.Drawing.Point(24, 198);
+            this.textBoxTrabajo.Multiline = true;
+            this.textBoxTrabajo.Name = "textBoxTrabajo";
+            this.textBoxTrabajo.Size = new System.Drawing.Size(415, 61);
+            this.textBoxTrabajo.TabIndex = 19;
+            // 
             // axAcroPDF2
             // 
             this.axAcroPDF2.Enabled = true;
@@ -374,6 +401,15 @@
             this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
             this.axAcroPDF2.Size = new System.Drawing.Size(346, 240);
             this.axAcroPDF2.TabIndex = 15;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(21, 182);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(81, 13);
+            this.label17.TabIndex = 18;
+            this.label17.Text = "&Observaciones:";
             // 
             // btnExaminarT
             // 
@@ -513,40 +549,6 @@
             this.label14.TabIndex = 19;
             this.label14.Text = "PLATAFORMA PROPUESTAS Y TRABAJOS DE GRADO";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(21, 191);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(81, 13);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "&Observaciones:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(24, 207);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(415, 61);
-            this.textBox1.TabIndex = 17;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(24, 198);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(415, 61);
-            this.textBox2.TabIndex = 19;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(21, 182);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(81, 13);
-            this.label17.TabIndex = 18;
-            this.label17.Text = "&Observaciones:";
-            // 
             // GUIEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -618,9 +620,9 @@
         private System.Windows.Forms.TextBox txtTitTrabajoGrado;
         private System.Windows.Forms.Button btnSubirTrabajo;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxProp;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxTrabajo;
         private System.Windows.Forms.Label label17;
     }
 }

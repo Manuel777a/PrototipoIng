@@ -79,17 +79,17 @@ namespace Ingenieria_Software_Prototipo
         private void btnAsignarJurado_Click(object sender, EventArgs e)
         {
 
-            if (txtCodigoEst.Text.Equals("") || txtCodigoEst.Text == null)
-            {
-                MessageBox.Show("ERROR. Ingrese el código del estudiante");
-                return;
-            }
+            //if (txtCodigoEst.Text.Equals("") || txtCodigoEst.Text == null)
+            //{
+            //    MessageBox.Show("ERROR. Ingrese el código del estudiante");
+            //    return;
+            //}
 
-            if( comboJurado.SelectedItem == null && (txtCodigoJurado1.Text ==null && txtCodigoJurado1.Text.Equals("")))
-            {
-                MessageBox.Show("ERROR. Debe escoger un jurado");
-                return;
-            }
+            //if( comboJurado.SelectedItem == null && (txtCodigoJurado1.Text ==null && txtCodigoJurado1.Text.Equals("")))
+            //{
+            //    MessageBox.Show("ERROR. Debe escoger un jurado");
+            //    return;
+            //}
 
             Equipo equipo = programaAcademico.buscarEquipo(txtCodigoEst.Text);
             TrabajoDeGrado trabajo = equipo.darTrabajoDeGrado();
@@ -104,6 +104,8 @@ namespace Ingenieria_Software_Prototipo
             {
                 Jurado jurado = (Jurado)comboJurado.SelectedItem;
                 jurado.agregarTrabajoGrado(trabajo);
+                MessageBox.Show("Se ha asignado el trabajo de grado: " + trabajo.darTitulo() + " Al jurado: " + jurado.darNombre());
+                return;
             }
             if (txtCodigoJurado1.Text != null || !txtNombreJurado1.Text.Equals(""))
             {
@@ -155,7 +157,7 @@ namespace Ingenieria_Software_Prototipo
                 return;
             }
 
-            else if (comboJurado.SelectedItem == null || txtCodigoJurado1.Text == null || txtCodigoJurado1.Text.Equals(""))
+            else if (comboJurado.SelectedItem == null)
             {
                 MessageBox.Show("ERROR. Debe escoger un jurado");
                 return;
@@ -170,6 +172,11 @@ namespace Ingenieria_Software_Prototipo
 
             MessageBox.Show("Trabajo de grado modificado exitosamente.");
             
+        }
+
+        private void GUIAdministrador_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -50,6 +50,7 @@ namespace Ingenieria_Software_Prototipo
                 cmbModalidadTra.Enabled = false;
                 comboBoxModalidad.Enabled = false;
                 btnSubirPropuesta.Enabled = false;
+                textBoxProp.Text = p.darObservaciones;
             }
             TrabajoDeGrado t = equipo.darTrabajoDeGrado();
             if(t!=null)
@@ -57,6 +58,7 @@ namespace Ingenieria_Software_Prototipo
                 axAcroPDF2.LoadFile(t.darRuta());
                 cmbModalidadTra.SelectedItem = t.darModalidad();
                 cmbCalTra.SelectedItem = t.darCalificacion();
+                textBoxTrabajo.Text = t.darObservaciones();
             }                      
         }      
         private void button1_Click(object sender, EventArgs e)
@@ -75,10 +77,7 @@ namespace Ingenieria_Software_Prototipo
                 equipo.asignarPropuestaDeGrado(p);
                 cargar();
             }
-        }
-
-        
-
+        }    
         private void btnExaminarT_Click(object sender, EventArgs e)
         {
             OpenFileDialog abrir = new OpenFileDialog();
@@ -116,7 +115,7 @@ namespace Ingenieria_Software_Prototipo
                     string modalidad = (string)cmbModalidadTra.SelectedItem;
                     TrabajoDeGrado t = new TrabajoDeGrado(titulo, modalidad, ruta);
                     equipo.setTrabajoDeGrado(t);
-                 axAcroPDF2.LoadFile(ruta);              
+                    axAcroPDF2.LoadFile(ruta);                              
             }
             catch(Exception ee)
             {

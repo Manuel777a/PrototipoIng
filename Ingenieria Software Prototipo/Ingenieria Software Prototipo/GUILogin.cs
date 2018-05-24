@@ -23,46 +23,49 @@ namespace Ingenieria_Software_Prototipo
         {
             string soy = Convert.ToString(comboBoxSoy.SelectedItem);
             string usuario = textBoxUsuario.Text;
-            string contraseña = textBoxContraseña.Text; 
-            if(!soy.Equals("") && !usuario.Equals("") && !contraseña.Equals(""))
+            string contraseña = textBoxContraseña.Text;
+            if (!soy.Equals("") && !usuario.Equals("") && !contraseña.Equals(""))
             {
-                if(soy.Equals("Jurado"))
+                if (soy.Equals("Jurado"))
                 {
 
                     // lanzar la interfaz jurado pasandole por parametro el programa academico
-                    
+
                 }
-                else if(soy.Equals("Estudiante"))
+                else if (soy.Equals("Estudiante"))
                 {
                     if (programaAcademico.buscarEquipo(textBoxUsuario.Text) == null)
                     {
                         GUIGeneracionEquipo interfazGeneracionEquipo = new GUIGeneracionEquipo(programaAcademico);
                         interfazGeneracionEquipo.Show();
-                        
-
-                    
 
                     }
                     else
                     {
                         Equipo equipo = programaAcademico.buscarEquipo(textBoxUsuario.Text);
-                        GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico,equipo);
+                        GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico, equipo);
                         interfazEstudiante.Show();
                     }
                 }
-                    // lanzar la interfaz estudiante pasandole por parametro el programa academico
-
-                }
-                else if(soy.Equals("Administrativo"))
+                // lanzar la interfaz estudiante pasandole por parametro el programa academico
+                else if (soy.Equals("Administrativo"))
                 {
 
                     GUIAdministrador interfazAdministrativo = new GUIAdministrador(programaAcademico);
                     interfazAdministrativo.Show();                    // lanzar la interfaz administrativo pasandole por parametro el programa academico
 
                 }
-            }       
+            }
+            else
+            {
+                MessageBox.Show("Error , Llene todos los campos para realizar Loggin");
+            }
+
+
         }
-       
     }
+}
+       
+    
 
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIEstudiante));
             this.gbEquipo = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNom2 = new System.Windows.Forms.TextBox();
@@ -41,17 +42,20 @@
             this.dtpFechaEntrega = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCalificacion = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxRuta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxSoy = new System.Windows.Forms.ComboBox();
+            this.comboBoxModalidad = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBoxTitulo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonExaminar = new System.Windows.Forms.Button();
+            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
             this.gbEquipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbEquipo
@@ -66,7 +70,7 @@
             this.gbEquipo.Controls.Add(this.txtNom3);
             this.gbEquipo.Location = new System.Drawing.Point(21, 12);
             this.gbEquipo.Name = "gbEquipo";
-            this.gbEquipo.Size = new System.Drawing.Size(596, 89);
+            this.gbEquipo.Size = new System.Drawing.Size(805, 89);
             this.gbEquipo.TabIndex = 7;
             this.gbEquipo.TabStop = false;
             this.gbEquipo.Text = "&Equipo conformado por:";
@@ -82,10 +86,10 @@
             // 
             // txtNom2
             // 
-            this.txtNom2.Location = new System.Drawing.Point(140, 51);
+            this.txtNom2.Location = new System.Drawing.Point(536, 55);
             this.txtNom2.Name = "txtNom2";
             this.txtNom2.ReadOnly = true;
-            this.txtNom2.Size = new System.Drawing.Size(157, 20);
+            this.txtNom2.Size = new System.Drawing.Size(238, 20);
             this.txtNom2.TabIndex = 18;
             // 
             // label6
@@ -99,16 +103,16 @@
             // 
             // txtNom1
             // 
-            this.txtNom1.Location = new System.Drawing.Point(140, 25);
+            this.txtNom1.Location = new System.Drawing.Point(536, 25);
             this.txtNom1.Name = "txtNom1";
             this.txtNom1.ReadOnly = true;
-            this.txtNom1.Size = new System.Drawing.Size(157, 20);
+            this.txtNom1.Size = new System.Drawing.Size(238, 20);
             this.txtNom1.TabIndex = 16;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(306, 54);
+            this.label7.Location = new System.Drawing.Point(413, 58);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(117, 13);
             this.label7.TabIndex = 13;
@@ -116,16 +120,16 @@
             // 
             // txtNom4
             // 
-            this.txtNom4.Location = new System.Drawing.Point(425, 51);
+            this.txtNom4.Location = new System.Drawing.Point(140, 51);
             this.txtNom4.Name = "txtNom4";
             this.txtNom4.ReadOnly = true;
-            this.txtNom4.Size = new System.Drawing.Size(157, 20);
+            this.txtNom4.Size = new System.Drawing.Size(238, 20);
             this.txtNom4.TabIndex = 14;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(306, 28);
+            this.label8.Location = new System.Drawing.Point(413, 28);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(117, 13);
             this.label8.TabIndex = 11;
@@ -133,29 +137,31 @@
             // 
             // txtNom3
             // 
-            this.txtNom3.Location = new System.Drawing.Point(425, 25);
+            this.txtNom3.Location = new System.Drawing.Point(140, 25);
             this.txtNom3.Name = "txtNom3";
             this.txtNom3.ReadOnly = true;
-            this.txtNom3.Size = new System.Drawing.Size(157, 20);
+            this.txtNom3.Size = new System.Drawing.Size(238, 20);
             this.txtNom3.TabIndex = 12;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.axAcroPDF1);
+            this.groupBox1.Controls.Add(this.buttonExaminar);
             this.groupBox1.Controls.Add(this.dtpFechaEntrega);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBoxCalificacion);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxRuta);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboBoxSoy);
+            this.groupBox1.Controls.Add(this.comboBoxModalidad);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBox16);
+            this.groupBox1.Controls.Add(this.textBoxTitulo);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(21, 107);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(596, 202);
+            this.groupBox1.Size = new System.Drawing.Size(805, 234);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Propuesta de Grado";
@@ -187,18 +193,18 @@
             this.button2.Text = "Quiero modificar mi propuesta";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // comboBoxCalificacion
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxCalificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCalificacion.FormattingEnabled = true;
+            this.comboBoxCalificacion.Items.AddRange(new object[] {
             "Aprobada",
             "Devuelta para Correciones",
             "No aceptada"});
-            this.comboBox1.Location = new System.Drawing.Point(99, 101);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(152, 21);
-            this.comboBox1.TabIndex = 10;
+            this.comboBoxCalificacion.Location = new System.Drawing.Point(99, 101);
+            this.comboBoxCalificacion.Name = "comboBoxCalificacion";
+            this.comboBoxCalificacion.Size = new System.Drawing.Size(152, 21);
+            this.comboBoxCalificacion.TabIndex = 10;
             // 
             // label3
             // 
@@ -209,13 +215,13 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "&Calificacion:";
             // 
-            // textBox1
+            // textBoxRuta
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(340, 20);
-            this.textBox1.TabIndex = 8;
+            this.textBoxRuta.Location = new System.Drawing.Point(99, 48);
+            this.textBoxRuta.Name = "textBoxRuta";
+            this.textBoxRuta.ReadOnly = true;
+            this.textBoxRuta.Size = new System.Drawing.Size(340, 20);
+            this.textBoxRuta.TabIndex = 8;
             // 
             // label2
             // 
@@ -235,19 +241,19 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "&Modalidad:";
             // 
-            // comboBoxSoy
+            // comboBoxModalidad
             // 
-            this.comboBoxSoy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSoy.FormattingEnabled = true;
-            this.comboBoxSoy.Items.AddRange(new object[] {
+            this.comboBoxModalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxModalidad.FormattingEnabled = true;
+            this.comboBoxModalidad.Items.AddRange(new object[] {
             "Monografia",
             "Asistencia De Investigacion",
             "Trabajo de Investigacion",
             "Opcion Emprendimiento"});
-            this.comboBoxSoy.Location = new System.Drawing.Point(99, 74);
-            this.comboBoxSoy.Name = "comboBoxSoy";
-            this.comboBoxSoy.Size = new System.Drawing.Size(152, 21);
-            this.comboBoxSoy.TabIndex = 5;
+            this.comboBoxModalidad.Location = new System.Drawing.Point(99, 74);
+            this.comboBoxModalidad.Name = "comboBoxModalidad";
+            this.comboBoxModalidad.Size = new System.Drawing.Size(152, 21);
+            this.comboBoxModalidad.TabIndex = 5;
             // 
             // label16
             // 
@@ -258,13 +264,13 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "&Titulo:";
             // 
-            // textBox16
+            // textBoxTitulo
             // 
-            this.textBox16.Location = new System.Drawing.Point(99, 22);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(340, 20);
-            this.textBox16.TabIndex = 4;
+            this.textBoxTitulo.Location = new System.Drawing.Point(99, 22);
+            this.textBoxTitulo.Name = "textBoxTitulo";
+            this.textBoxTitulo.ReadOnly = true;
+            this.textBoxTitulo.Size = new System.Drawing.Size(340, 20);
+            this.textBoxTitulo.TabIndex = 4;
             // 
             // button1
             // 
@@ -274,12 +280,32 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Quiero subir una propuesta";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonExaminar
+            // 
+            this.buttonExaminar.Location = new System.Drawing.Point(374, 72);
+            this.buttonExaminar.Name = "buttonExaminar";
+            this.buttonExaminar.Size = new System.Drawing.Size(65, 23);
+            this.buttonExaminar.TabIndex = 14;
+            this.buttonExaminar.Text = "Examinar";
+            this.buttonExaminar.UseVisualStyleBackColor = true;
+            this.buttonExaminar.Click += new System.EventHandler(this.buttonExaminar_Click);
+            // 
+            // axAcroPDF1
+            // 
+            this.axAcroPDF1.Enabled = true;
+            this.axAcroPDF1.Location = new System.Drawing.Point(445, 19);
+            this.axAcroPDF1.Name = "axAcroPDF1";
+            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
+            this.axAcroPDF1.Size = new System.Drawing.Size(346, 209);
+            this.axAcroPDF1.TabIndex = 15;
             // 
             // GUIEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 395);
+            this.ClientSize = new System.Drawing.Size(838, 395);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbEquipo);
             this.Name = "GUIEstudiante";
@@ -289,6 +315,7 @@
             this.gbEquipo.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,16 +333,18 @@
         private System.Windows.Forms.TextBox txtNom3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBoxTitulo;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBoxSoy;
+        private System.Windows.Forms.ComboBox comboBoxModalidad;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxCalificacion;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxRuta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtpFechaEntrega;
+        private System.Windows.Forms.Button buttonExaminar;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
     }
 }

@@ -25,7 +25,8 @@ namespace Ingenieria_Software_Prototipo
             txtNom3.Text = equipo.darEstudiantes[2].ToString();
             txtNom4.Text = equipo.darEstudiantes[3].ToString();
             cargarPropuesta();
-            cargarTrabajo();
+            comboBoxCalificacion.Enabled = false;
+            cmbCalTra.Enabled = false;            
         }
         public void cargarPropuesta()
         {
@@ -34,7 +35,8 @@ namespace Ingenieria_Software_Prototipo
             {
                 textBoxRuta.ReadOnly = false;
                 textBoxTitulo.ReadOnly = false;
-                dtpFechaEntrega.Enabled = true;              
+
+                            
             }
             else
             {
@@ -45,21 +47,13 @@ namespace Ingenieria_Software_Prototipo
                 rutaP = p.darRutaDocumento;
                  //dtpFechaEntrega.Value = p.darFechaEntrega;
                 axAcroPDF1.LoadFile(rutaP);
+                txtTitTrabajoGrado.Text = p.darTitulo;
+                cmbModalidadTra.SelectedItem = p.darModalidad;
+                cmbModalidadTra.Enabled = false;
+                comboBoxModalidad.Enabled = false;
+                btnSubirPropuesta.Enabled = false;
             }
-        }
-
-        public void cargarTrabajo()
-        {
-            
-            //TrabajoDeGrado t = equipo.darTrabajoDeGrado();
-            //txtTitTrabajoGrado.Text = textBoxTitulo.Text;
-            //cmbModalidadTra.SelectedItem = comboBoxModalidad;
-            ////cmbCalTra.SelectedItem = t.darCalificacion();
-            //rutaT = t.darRuta();
-            //axAcroPDF2.LoadFile(rutaT);
-
-        }
-
+        }      
         private void button1_Click(object sender, EventArgs e)
         {
             object modalidad = comboBoxModalidad.SelectedItem;
@@ -99,9 +93,13 @@ namespace Ingenieria_Software_Prototipo
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
+        
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            btnSubirPropuesta.Enabled = true;
+            textBoxTitulo.ReadOnly = false;
+            comboBoxModalidad.Enabled = true;
         }
 
         private void buttonExaminar_Click(object sender, EventArgs e)

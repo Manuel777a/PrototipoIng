@@ -54,7 +54,7 @@
             this.comboBoxModalidad = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.textBoxTitulo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSubirPropuesta = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
@@ -70,8 +70,12 @@
             this.cmbModalidadTra = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtTitTrabajoGrado = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnSubirTrabajo = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.gbEquipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
@@ -167,6 +171,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.axAcroPDF1);
             this.groupBox1.Controls.Add(this.buttonExaminar);
             this.groupBox1.Controls.Add(this.dtpFechaEntrega);
@@ -180,10 +186,10 @@
             this.groupBox1.Controls.Add(this.comboBoxModalidad);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.textBoxTitulo);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnSubirPropuesta);
             this.groupBox1.Location = new System.Drawing.Point(21, 179);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(805, 234);
+            this.groupBox1.Size = new System.Drawing.Size(805, 283);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Propuesta de Grado";
@@ -194,7 +200,7 @@
             this.axAcroPDF1.Location = new System.Drawing.Point(445, 19);
             this.axAcroPDF1.Name = "axAcroPDF1";
             this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
-            this.axAcroPDF1.Size = new System.Drawing.Size(346, 209);
+            this.axAcroPDF1.Size = new System.Drawing.Size(346, 258);
             this.axAcroPDF1.TabIndex = 15;
             // 
             // buttonExaminar
@@ -233,6 +239,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Quiero modificar mi propuesta";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBoxCalificacion
             // 
@@ -314,15 +321,15 @@
             this.textBoxTitulo.Size = new System.Drawing.Size(340, 20);
             this.textBoxTitulo.TabIndex = 4;
             // 
-            // button1
+            // btnSubirPropuesta
             // 
-            this.button1.Location = new System.Drawing.Point(24, 156);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Quiero subir una propuesta";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSubirPropuesta.Location = new System.Drawing.Point(24, 156);
+            this.btnSubirPropuesta.Name = "btnSubirPropuesta";
+            this.btnSubirPropuesta.Size = new System.Drawing.Size(150, 23);
+            this.btnSubirPropuesta.TabIndex = 1;
+            this.btnSubirPropuesta.Text = "Quiero subir una propuesta";
+            this.btnSubirPropuesta.UseVisualStyleBackColor = true;
+            this.btnSubirPropuesta.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -336,7 +343,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.axAcroPDF2);
+            this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.btnExaminarT);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.label9);
@@ -349,10 +358,10 @@
             this.groupBox2.Controls.Add(this.cmbModalidadTra);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.txtTitTrabajoGrado);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Location = new System.Drawing.Point(21, 419);
+            this.groupBox2.Controls.Add(this.btnSubirTrabajo);
+            this.groupBox2.Location = new System.Drawing.Point(21, 468);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(805, 234);
+            this.groupBox2.Size = new System.Drawing.Size(805, 269);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Trabajo de Grado";
@@ -363,7 +372,7 @@
             this.axAcroPDF2.Location = new System.Drawing.Point(445, 19);
             this.axAcroPDF2.Name = "axAcroPDF2";
             this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
-            this.axAcroPDF2.Size = new System.Drawing.Size(346, 209);
+            this.axAcroPDF2.Size = new System.Drawing.Size(346, 240);
             this.axAcroPDF2.TabIndex = 15;
             // 
             // btnExaminarT
@@ -484,15 +493,14 @@
             this.txtTitTrabajoGrado.Size = new System.Drawing.Size(340, 20);
             this.txtTitTrabajoGrado.TabIndex = 4;
             // 
-            // button5
+            // btnSubirTrabajo
             // 
-            this.button5.Location = new System.Drawing.Point(24, 156);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 23);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Quiero subir un trabajo";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnSubirTrabajo.Location = new System.Drawing.Point(24, 156);
+            this.btnSubirTrabajo.Name = "btnSubirTrabajo";
+            this.btnSubirTrabajo.Size = new System.Drawing.Size(150, 23);
+            this.btnSubirTrabajo.TabIndex = 1;
+            this.btnSubirTrabajo.Text = "Quiero subir un trabajo";
+            this.btnSubirTrabajo.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -504,12 +512,46 @@
             this.label14.TabIndex = 19;
             this.label14.Text = "PLATAFORMA PROPUESTAS Y TRABAJOS DE GRADO";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(21, 191);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(81, 13);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "&Observaciones:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(24, 207);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(415, 61);
+            this.textBox1.TabIndex = 17;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(24, 198);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(415, 61);
+            this.textBox2.TabIndex = 19;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(21, 182);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(81, 13);
+            this.label17.TabIndex = 18;
+            this.label17.Text = "&Observaciones:";
+            // 
             // GUIEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(838, 678);
+            this.ClientSize = new System.Drawing.Size(838, 749);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
@@ -546,7 +588,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBoxTitulo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSubirPropuesta;
         private System.Windows.Forms.ComboBox comboBoxModalidad;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBoxCalificacion;
@@ -573,7 +615,11 @@
         private System.Windows.Forms.ComboBox cmbModalidadTra;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtTitTrabajoGrado;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnSubirTrabajo;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label17;
     }
 }

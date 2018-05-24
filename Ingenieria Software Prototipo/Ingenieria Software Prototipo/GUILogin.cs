@@ -27,22 +27,17 @@ namespace Ingenieria_Software_Prototipo
             {
                 if(soy.Equals("Jurado"))
                 {
-                    // toca pasarle por parametro el programaAcademico
-                    GUIJurado jurado = new GUIJurado();
-                    jurado.Show();
+                    // lanzar la interfaz jurado pasandole por parametro el programa academico
+                    
                 }
                 else if(soy.Equals("Estudiante"))
                 {
-                    // toca pasarle por parametro el programaAcademico
-                    GUIEstudiantes estudiante = new GUIEstudiantes();
-                    estudiante.Show();
+                    // lanzar la interfaz estudiante pasandole por parametro el programa academico
 
                 }
                 else if(soy.Equals("Administrativo"))
                 {
-                    // toca pasarle por parametro el programaAcademico
-                    GUIAdministrativos admin = new GUIAdministrativos();
-                    admin.Show();
+                    // lanzar la interfaz administrativo pasandole por parametro el programa academico
 
                 }
             }       

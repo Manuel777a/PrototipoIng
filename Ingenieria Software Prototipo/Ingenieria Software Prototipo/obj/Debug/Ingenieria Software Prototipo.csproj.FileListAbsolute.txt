@@ -28,3 +28,9 @@ C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingeni
 C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Ingenieria Software Prototipo.exe.config
 C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.exe
 C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.pdb
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.ResolveComReference.cache
+C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUIJurado.resources

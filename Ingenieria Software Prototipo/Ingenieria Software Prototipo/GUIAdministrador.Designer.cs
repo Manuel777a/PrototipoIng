@@ -67,6 +67,8 @@
             this.cbModalidadTrabajo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtTituloTrabajo = new System.Windows.Forms.TextBox();
+            this.btnActualizarPropuesta = new System.Windows.Forms.Button();
+            this.btnActualizarTrabajo = new System.Windows.Forms.Button();
             this.gbEquipo.SuspendLayout();
             this.gbJurado.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -199,6 +201,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnActualizarPropuesta);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txtObservacionesPropuesta);
             this.groupBox1.Controls.Add(this.dtpFechaEntregaPropuesta);
@@ -333,6 +336,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnActualizarTrabajo);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.txtObservacionesTrabajo);
             this.groupBox2.Controls.Add(this.dtpTrabajo);
@@ -465,6 +469,26 @@
             this.txtTituloTrabajo.Size = new System.Drawing.Size(264, 20);
             this.txtTituloTrabajo.TabIndex = 4;
             // 
+            // btnActualizarPropuesta
+            // 
+            this.btnActualizarPropuesta.Location = new System.Drawing.Point(369, 15);
+            this.btnActualizarPropuesta.Name = "btnActualizarPropuesta";
+            this.btnActualizarPropuesta.Size = new System.Drawing.Size(123, 23);
+            this.btnActualizarPropuesta.TabIndex = 18;
+            this.btnActualizarPropuesta.Text = "Actualizar";
+            this.btnActualizarPropuesta.UseVisualStyleBackColor = true;
+            this.btnActualizarPropuesta.Click += new System.EventHandler(this.btnActualizarPropuesta_Click);
+            // 
+            // btnActualizarTrabajo
+            // 
+            this.btnActualizarTrabajo.Location = new System.Drawing.Point(369, 20);
+            this.btnActualizarTrabajo.Name = "btnActualizarTrabajo";
+            this.btnActualizarTrabajo.Size = new System.Drawing.Size(123, 23);
+            this.btnActualizarTrabajo.TabIndex = 19;
+            this.btnActualizarTrabajo.Text = "Actualizar";
+            this.btnActualizarTrabajo.UseVisualStyleBackColor = true;
+            this.btnActualizarTrabajo.Click += new System.EventHandler(this.btnActualizarTrabajo_Click);
+            // 
             // GUIAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,5 +553,7 @@
         private System.Windows.Forms.ComboBox cbModalidadTrabajo;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtTituloTrabajo;
+        private System.Windows.Forms.Button btnActualizarPropuesta;
+        private System.Windows.Forms.Button btnActualizarTrabajo;
     }
 }

@@ -54,6 +54,12 @@ namespace Ingenieria_Software_Prototipo
         {
             return fechaEntrega;
         }
+
+        public void cambiarFechaEntrega(DateTime pFecha)
+        {
+            fechaEntrega = pFecha;
+        }
+
         public void asignarTiempoEntrega(DateTime tiempo)
         {
             fechaEntrega = tiempo;
@@ -63,9 +69,9 @@ namespace Ingenieria_Software_Prototipo
         {
             rutaDocumento = pRuta;
         }
-        public void cambiarCalificacion(CalificacionesT cal)
+        public void cambiarCalificacion(String cal)
         {
-            calificacion = cal.ToString();
+            calificacion = cal;
         }
         public String darCalificacion()
         {

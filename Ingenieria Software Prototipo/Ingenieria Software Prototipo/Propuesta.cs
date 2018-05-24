@@ -36,6 +36,8 @@ namespace Ingenieria_Software_Prototipo
             this.modalidad = modalidad;
             this.rutaDocumento = rutaDocumento;
             calificacion = Propuesta.Calificaciones.PorRevisar.ToString();
+            fechaEntrega = new DateTime(2018, 05, 25);
+
         }
 
         public String darTitulo

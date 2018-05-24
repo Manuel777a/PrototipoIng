@@ -17,7 +17,9 @@ namespace Ingenieria_Software_Prototipo
         {
             InitializeComponent();
             programaAcademico = pPrograma;
-           // llenarCombo();
+            llenarCombo();
+            cbModalidadPropuesta.Enabled = false;
+            cbModalidadTrabajo.Enabled = false;
         }
 
         private void btnConsultarPropuesta_Click(object sender, EventArgs e)
@@ -37,7 +39,7 @@ namespace Ingenieria_Software_Prototipo
                 txtObservacionesPropuesta.Text = propuesta.darObservaciones;
                 cbCalificacionPropuesta.SelectedItem = propuesta.darCalificacion;
                 cbModalidadPropuesta.SelectedItem = propuesta.darModalidad;
-                // dtpFechaEntregaPropuesta.Value = propuesta.darFechaEntrega;
+                 dtpFechaEntregaPropuesta.Value = propuesta.darFechaEntrega;
             }
             else
             {
@@ -122,6 +124,51 @@ namespace Ingenieria_Software_Prototipo
                 comboJurado.Items.Add(j);
 
             }
+            
+        }
+
+        private void btnActualizarPropuesta_Click(object sender, EventArgs e)
+        {
+
+            if (txtCodigoEst.Text.Equals("") || txtCodigoEst.Text == null)
+            {
+                MessageBox.Show("ERROR. Ingrese el código del estudiante");
+                return;
+            }
+            
+            Equipo equipo = programaAcademico.buscarEquipo(txtCodigoEst.Text);
+            Propuesta propuesta = equipo.darPropuesta();
+
+            propuesta.darCalificacion = cbCalificacionPropuesta.Text;
+            propuesta.darFechaEntrega = dtpFechaEntregaPropuesta.Value;
+            propuesta.darObservaciones = txtObservacionesPropuesta.Text;
+           
+            MessageBox.Show("Propuesta modificada correctamente.");
+
+        }
+
+        private void btnActualizarTrabajo_Click(object sender, EventArgs e)
+        {
+            if (txtCodigoEst.Text.Equals("") || txtCodigoEst.Text == null)
+            {
+                MessageBox.Show("ERROR. Ingrese el código del estudiante");
+                return;
+            }
+
+            else if (comboJurado.SelectedItem == null || txtCodigoJurado1.Text == null || txtCodigoJurado1.Text.Equals(""))
+            {
+                MessageBox.Show("ERROR. Debe escoger un jurado");
+                return;
+            }
+
+            Equipo equipo = programaAcademico.buscarEquipo(txtCodigoEst.Text);
+            TrabajoDeGrado trabajo = equipo.darTrabajoDeGrado();
+
+            trabajo.cambiarCalificacion(cbCalificacionTrabajo.Text);
+            trabajo.cambiarObservaciones(txtObservacionesTrabajo.Text);
+            trabajo.cambiarFechaEntrega(dtpTrabajo.Value);
+
+            MessageBox.Show("Trabajo de grado modificado exitosamente.");
             
         }
     }

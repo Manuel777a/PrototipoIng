@@ -13,9 +13,9 @@ namespace Ingenieria_Software_Prototipo
         private Propuesta propuesta;
         private Estudiante[] estudiantes;
 
-        public Equipo()
+        public Equipo(Estudiante[] pArreglo)
         {
-            estudiantes = new Estudiante[4];
+            estudiantes = pArreglo;
         }
         public Propuesta darPropuesta()
         {

@@ -17,6 +17,7 @@ namespace Ingenieria_Software_Prototipo
         {
             InitializeComponent();
             programaAcademico = pPrograma;
+            txt
         }
 
         private void label4_Click(object sender, EventArgs e)

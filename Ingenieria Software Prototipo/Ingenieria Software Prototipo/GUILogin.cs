@@ -34,7 +34,21 @@ namespace Ingenieria_Software_Prototipo
                 }
                 else if(soy.Equals("Estudiante"))
                 {
-                    GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico);
+                    if (programaAcademico.buscarEquipo(textBoxUsuario.Text) == null)
+                    {
+                        GUIGeneracionEquipo interfazGeneracionEquipo = new GUIGeneracionEquipo(programaAcademico);
+                        interfazGeneracionEquipo.Show();
+                        
+
+                    
+
+                    }
+                    else
+                    {
+                        GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico);
+                        interfazEstudiante.Show();
+                    }
+                }
                     // lanzar la interfaz estudiante pasandole por parametro el programa academico
 
                 }
@@ -47,9 +61,7 @@ namespace Ingenieria_Software_Prototipo
                 }
             }       
         }
-        private void buttSalir_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Salir");
-        }
+       
     }
-}
+
+

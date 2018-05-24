@@ -34,7 +34,6 @@
             this.comboBoxSoy = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttIngresar = new System.Windows.Forms.Button();
-            this.buttSalir = new System.Windows.Forms.Button();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -96,17 +95,6 @@
             this.buttIngresar.UseVisualStyleBackColor = true;
             this.buttIngresar.Click += new System.EventHandler(this.buttIngresar_Click);
             // 
-            // buttSalir
-            // 
-            this.buttSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttSalir.Location = new System.Drawing.Point(118, 94);
-            this.buttSalir.Name = "buttSalir";
-            this.buttSalir.Size = new System.Drawing.Size(75, 23);
-            this.buttSalir.TabIndex = 7;
-            this.buttSalir.Text = "Salir";
-            this.buttSalir.UseVisualStyleBackColor = true;
-            this.buttSalir.Click += new System.EventHandler(this.buttSalir_Click);
-            // 
             // textBoxUsuario
             // 
             this.textBoxUsuario.AcceptsTab = true;
@@ -120,7 +108,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(235, 121);
-            this.Controls.Add(this.buttSalir);
             this.Controls.Add(this.buttIngresar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxSoy);
@@ -143,7 +130,6 @@
         private System.Windows.Forms.ComboBox comboBoxSoy;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttIngresar;
-        private System.Windows.Forms.Button buttSalir;
         private System.Windows.Forms.TextBox textBoxUsuario;
     }
 }

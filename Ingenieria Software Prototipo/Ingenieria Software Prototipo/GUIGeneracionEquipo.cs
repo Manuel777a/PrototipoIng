@@ -32,7 +32,7 @@ namespace Ingenieria_Software_Prototipo
             studs[3] = stud4;
             Equipo equipo = new Equipo(studs);
             programaAcademico.agregarEquipo(equipo);
-            GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico);
+            GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico,equipo);
             this.Visible = false;
             interfazEstudiante.Show();
         }

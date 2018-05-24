@@ -41,6 +41,10 @@ namespace Ingenieria_Software_Prototipo
                 codigo = value;
             }
         }
+        public override String ToString()
+        {
+            return nombre;
+        }
     }
 }
 

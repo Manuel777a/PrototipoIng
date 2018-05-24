@@ -30,7 +30,7 @@
         {
             this.gbEquipo = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.TextBox();
+            this.txtNom2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNom1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             // gbEquipo
             // 
             this.gbEquipo.Controls.Add(this.label5);
-            this.gbEquipo.Controls.Add(this.txtNom);
+            this.gbEquipo.Controls.Add(this.txtNom2);
             this.gbEquipo.Controls.Add(this.label6);
             this.gbEquipo.Controls.Add(this.txtNom1);
             this.gbEquipo.Controls.Add(this.label7);
@@ -80,13 +80,13 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Nombre del Estudiante:";
             // 
-            // txtNom
+            // txtNom2
             // 
-            this.txtNom.Location = new System.Drawing.Point(140, 51);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.ReadOnly = true;
-            this.txtNom.Size = new System.Drawing.Size(157, 20);
-            this.txtNom.TabIndex = 18;
+            this.txtNom2.Location = new System.Drawing.Point(140, 51);
+            this.txtNom2.Name = "txtNom2";
+            this.txtNom2.ReadOnly = true;
+            this.txtNom2.Size = new System.Drawing.Size(157, 20);
+            this.txtNom2.TabIndex = 18;
             // 
             // label6
             // 
@@ -177,7 +177,6 @@
             this.label4.Size = new System.Drawing.Size(80, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "&Fecha Entrega:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button2
             // 
@@ -284,7 +283,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbEquipo);
             this.Name = "GUIEstudiante";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Estudiante";
             this.gbEquipo.ResumeLayout(false);
             this.gbEquipo.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -297,7 +297,7 @@
 
         private System.Windows.Forms.GroupBox gbEquipo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.TextBox txtNom2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNom1;
         private System.Windows.Forms.Label label7;

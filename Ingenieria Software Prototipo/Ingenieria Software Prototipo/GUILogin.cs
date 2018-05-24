@@ -45,7 +45,8 @@ namespace Ingenieria_Software_Prototipo
                     }
                     else
                     {
-                        GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico);
+                        Equipo equipo = programaAcademico.buscarEquipo(textBoxUsuario.Text);
+                        GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico,equipo);
                         interfazEstudiante.Show();
                     }
                 }
@@ -55,8 +56,8 @@ namespace Ingenieria_Software_Prototipo
                 else if(soy.Equals("Administrativo"))
                 {
 
-                    GUIAdministrador interfazJurado = new GUIAdministrador(programaAcademico);
-                    interfazJurado.Show();                    // lanzar la interfaz administrativo pasandole por parametro el programa academico
+                    GUIAdministrador interfazAdministrativo = new GUIAdministrador(programaAcademico);
+                    interfazAdministrativo.Show();                    // lanzar la interfaz administrativo pasandole por parametro el programa academico
 
                 }
             }       

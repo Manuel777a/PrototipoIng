@@ -54,24 +54,48 @@ namespace Ingenieria_Software_Prototipo
                 grilla.Rows[4].HeaderCell.Value = "Calificacion";
 
                 grilla.Rows[5].HeaderCell.Value = "Ruta del documento";
+
+                for(int i = 0; i <  )
+
             }
         }
 
         private void btnAsignarJurado_Click(object sender, EventArgs e)
         {
-            if (comboJurado.SelectedItem == null || txtCodigoJurado1.Text ==null || txtCodigoJurado1.Text.Equals(""))
+
+            if (txtCodigoEst.Text.Equals("") || txtCodigoEst.Text == null)
             {
-                MessageBox.Show("ERROR. Debe escoger un jurado");
+                MessageBox.Show("ERROR. Ingrese el código del estudiante");
+                return;
             }
 
+            else if (comboJurado.SelectedItem == null || txtCodigoJurado1.Text ==null || txtCodigoJurado1.Text.Equals(""))
+            {
+                MessageBox.Show("ERROR. Debe escoger un jurado");
+                return;
+            }
 
+            Equipo equipo = programaAcademico.buscarEquipo(txtCodigoEst.Text);
+            TrabajoDeGrado trabajo = equipo.darTrabajoDeGrado();
+            if (trabajo == null)
+            {
+                MessageBox.Show("ERROR. El equipo no tiene un trabajo de grado en el sistema.");
+                return;
 
-
-
-
-
-
-            llenarCombo();
+            }
+            
+            if (comboJurado.SelectedItem != null)
+            {
+                Jurado jurado = (Jurado)comboJurado.SelectedItem;
+                jurado.agregarTrabajoGrado(trabajo);
+            }
+            if (txtCodigoJurado1.Text != null || !txtNombreJurado1.Text.Equals(""))
+            {
+                Jurado juradoNuevo = new Jurado(txtNombreJurado1.Text, txtCodigoJurado1.Text);
+                programaAcademico.agregarJurado(juradoNuevo);
+                juradoNuevo.agregarTrabajoGrado(trabajo);
+                llenarCombo();
+            }
         }
 
        
@@ -81,7 +105,6 @@ namespace Ingenieria_Software_Prototipo
             for (int i = 0; i < lista.Count; i++)
             {
                 Jurado j = lista[i];
-
                 comboJurado.Items.Add(j);
 
             }

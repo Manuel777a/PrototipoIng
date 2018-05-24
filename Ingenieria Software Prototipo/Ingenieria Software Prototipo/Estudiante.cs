@@ -10,9 +10,9 @@ namespace Ingenieria_Software_Prototipo
     {
         private String nombre;
 
-        private int codigo;
+        private string codigo;
 
-        public Estudiante(String nombre, int codigo)
+        public Estudiante(String nombre, string codigo)
         {
             this.nombre = nombre;
             this.codigo = codigo;
@@ -30,7 +30,7 @@ namespace Ingenieria_Software_Prototipo
             }
         }
 
-        public int darCodigo
+        public string darCodigo
         {
             get
             {

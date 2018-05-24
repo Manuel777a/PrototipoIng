@@ -43,17 +43,47 @@ namespace Ingenieria_Software_Prototipo
         }
 
         //terminar cuando se tenga la clase equipo
-        public Equipo buscarEquipo(int codigoEstudiante)
+        public Equipo buscarEquipo(string codigoEstudiante)
         {
-            return null;
+            Equipo result = null;
+            bool encontro = false;
+            for (int i = 0; i < equipos.Count && !encontro; i++)
+            {
+                Estudiante[] estudiantesEquipo = equipos[i].darEstudiantes;
+                for(int j=0;j<estudiantesEquipo.Length;j++)
+                {
+                    if(estudiantesEquipo[j].darCodigo.Equals(codigoEstudiante))
+                    {
+                        result = equipos[i];
+                        encontro = true;
+                        break;
+                    }
+                }
+            }
+            return result;
         }
 
         //realizar el metodo buscarJurado
-
+        public Jurado buscarJurado(String pCedula)
+        {
+            Jurado aux = null;
+            for(int i=0;i < jurados.Count;i++)
+            {
+                if(jurados[i].darCedula().Equals(pCedula))
+                {
+                    aux = jurados[i];
+                    break;
+                }
+            }
+            return aux;
+        }
         public void agregarEquipo(Equipo equipo)
         {
             equipos.Add(equipo);
         }
-
+        public void agregarJurado(Jurado jurado)
+        {
+            jurados.Add(jurado);
+        }
     }
 }

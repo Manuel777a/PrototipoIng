@@ -13,10 +13,11 @@ namespace Ingenieria_Software_Prototipo
     public partial class GUIAdministrador : Form
     {
         private ProgramaAcademico programaAcademico;
-        public GUIAdministrador()
+        public GUIAdministrador(ProgramaAcademico pPrograma)
         {
             InitializeComponent();
-            programaAcademico = new ProgramaAcademico();
+            programaAcademico = pPrograma;
+            llenarCombo();
         }
 
         private void btnConsultarPropuesta_Click(object sender, EventArgs e)
@@ -34,41 +35,51 @@ namespace Ingenieria_Software_Prototipo
             {
                 MessageBox.Show("ERROR. Ingrese el código del estudiante");
             }
+            Equipo equipo = programaAcademico.buscarEquipo(txtCodigoEst.Text);
+            TrabajoDeGrado trabajo = equipo.darTrabajoDeGrado();
+            if (trabajo == null)
+            {
+                MessageBox.Show("ERROR. El estudiante no tiene un trabajo de grado registrado");
+            }
+            else
+            {
+                grilla.Rows[0].HeaderCell.Value = "Título";
 
+                grilla.Rows[1].HeaderCell.Value = "Modalidad";
+
+                grilla.Rows[2].HeaderCell.Value = "Observaciones";
+
+                grilla.Rows[3].HeaderCell.Value = "Fecha de entrega";
+
+                grilla.Rows[4].HeaderCell.Value = "Calificacion";
+
+                grilla.Rows[5].HeaderCell.Value = "Ruta del documento";
+            }
         }
 
         private void btnAsignarJurado_Click(object sender, EventArgs e)
         {
 
-            if (txtCodigoEst.Text.Equals("") || txtCodigoEst.Text == null)
+            
+            programaAcademico.agregarJurado((Jurado)comboJurado.SelectedItem);
+
+           
+
+
+            llenarCombo();
+        }
+
+       
+        private void llenarCombo()
+        {
+        List<Jurado> lista =  programaAcademico.darJurados;
+            for (int i = 0; i < lista.Count; i++)
             {
-                MessageBox.Show("ERROR. Ingrese el código del estudiante");
+                Jurado j = lista[i];
+                
+                comboJurado.Items.Add(j);
             }
-            else if (txtCodigoJurado1.Equals("") || txtCodigoEst.Text == null)
-            {
-                MessageBox.Show("ERROR. Ingrese el código del jurado");
-            }
-            else
-            {
-                Jurado jurado1 = new Jurado(txtCodigoJurado1.Text, txtNombreJurado1.Text);
-
-                Jurado jurado2 = new Jurado(txtCodigoJurado2.Text, txtNombreJurado2.Text);
-
-                Equipo equipo = programaAcademico.buscarEquipo(txtCodigoEst.Text);
-                TrabajoDeGrado trabajoDeGrado = equipo.darTrabajoDeGrado();
-                if (trabajoDeGrado == null)
-                {
-                    MessageBox.Show("ERROR. El equipo no tiene un trabajo de grado.");
-                    return;
-                }
-                else
-                {
-                    trabajoDeGrado.asignarJurado(jurado1, jurado2);
-                    MessageBox.Show("Jurados asignados.");
-                }
-            }
-
-
+            
         }
     }
 }

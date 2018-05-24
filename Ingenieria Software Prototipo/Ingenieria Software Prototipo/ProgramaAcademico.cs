@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ingenieria_Software_Prototipo
 {
-    class ProgramaAcademico
+    public class ProgramaAcademico
     {
         private List<Equipo> equipos;
 
@@ -15,7 +15,19 @@ namespace Ingenieria_Software_Prototipo
         public ProgramaAcademico()
         {
             equipos = new List<Equipo>();
-            jurados = new List<Jurado>(); 
+            jurados = new List<Jurado>();
+
+            Jurado j1 = new Jurado("j1", "1");
+
+            jurados.Add(j1);
+            Jurado j2 = new Jurado("j2", "2");
+
+            jurados.Add(j2);
+            Jurado j3 = new Jurado("j3", "3");
+
+            jurados.Add(j3);
+
+
         }
 
         public List<Equipo> darEquipos

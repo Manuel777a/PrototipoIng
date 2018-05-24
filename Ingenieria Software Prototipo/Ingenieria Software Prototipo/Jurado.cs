@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace Ingenieria_Software_Prototipo
 {
-    class Jurado
+    public class Jurado
     {
         private String nombre;
         private String cedula;
         private List<TrabajoDeGrado> TrabajosDeGrado;
+
         public Jurado(String pNombre, String pCedula)
         {
             nombre = pNombre;
@@ -34,6 +35,11 @@ namespace Ingenieria_Software_Prototipo
         public List<TrabajoDeGrado> darTrabajosDeGrado()
         {
             return TrabajosDeGrado;
-        }        
+        }
+
+        public void asignarTrabajoDeGrado(TrabajoDeGrado pTrabajoDeGrado)
+        {
+            TrabajosDeGrado.Add(pTrabajoDeGrado);
+        }
     }
 }

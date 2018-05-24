@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ingenieria_Software_Prototipo
 {
-    class Estudiante
+   public  class Estudiante
     {
         private String nombre;
 

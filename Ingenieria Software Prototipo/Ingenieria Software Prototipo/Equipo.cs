@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ingenieria_Software_Prototipo
 {
-    class Equipo
+   public class Equipo
     {
         private bool estadoAlDia;
         private TrabajoDeGrado trabajoDeGrado;

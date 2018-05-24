@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ingenieria_Software_Prototipo
 {
-    class Propuesta
+    public class Propuesta
     {
 
         public enum Modalidades

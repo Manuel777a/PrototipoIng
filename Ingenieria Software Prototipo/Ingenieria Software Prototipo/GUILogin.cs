@@ -16,6 +16,7 @@ namespace Ingenieria_Software_Prototipo
         public GUILogin()
         {
             InitializeComponent();
+            programaAcademico = new ProgramaAcademico();
         }
 
         private void buttIngresar_Click(object sender, EventArgs e)
@@ -27,6 +28,7 @@ namespace Ingenieria_Software_Prototipo
             {
                 if(soy.Equals("Jurado"))
                 {
+
                     // lanzar la interfaz jurado pasandole por parametro el programa academico
                     
                 }
@@ -37,7 +39,9 @@ namespace Ingenieria_Software_Prototipo
                 }
                 else if(soy.Equals("Administrativo"))
                 {
-                    // lanzar la interfaz administrativo pasandole por parametro el programa academico
+
+                    GUIAdministrador interfazJurado = new GUIAdministrador(programaAcademico);
+                    interfazJurado.Show();                    // lanzar la interfaz administrativo pasandole por parametro el programa academico
 
                 }
             }       

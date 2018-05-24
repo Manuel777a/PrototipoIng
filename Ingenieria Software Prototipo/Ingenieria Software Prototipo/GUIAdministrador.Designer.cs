@@ -35,26 +35,15 @@
             this.txtCodigoEst = new System.Windows.Forms.TextBox();
             this.gbEquipo = new System.Windows.Forms.GroupBox();
             this.gbJurado = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboJurado = new System.Windows.Forms.ComboBox();
             this.txtNombreJurado1 = new System.Windows.Forms.TextBox();
             this.labNombre = new System.Windows.Forms.Label();
             this.txtCodigoJurado1 = new System.Windows.Forms.TextBox();
             this.labCedula = new System.Windows.Forms.Label();
-            this.gbPropuestas = new System.Windows.Forms.GroupBox();
-            this.cbPropuestas = new System.Windows.Forms.ComboBox();
-            this.gbTrabajos = new System.Windows.Forms.GroupBox();
-            this.cbTrabajos = new System.Windows.Forms.ComboBox();
-            this.cbJurados = new System.Windows.Forms.ComboBox();
-            this.gbJurados = new System.Windows.Forms.GroupBox();
             this.grilla = new System.Windows.Forms.DataGridView();
-            this.txtNombreJurado2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCodigoJurado2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.gbEquipo.SuspendLayout();
             this.gbJurado.SuspendLayout();
-            this.gbPropuestas.SuspendLayout();
-            this.gbTrabajos.SuspendLayout();
-            this.gbJurados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +78,7 @@
             // 
             // btnAsignarJurados
             // 
-            this.btnAsignarJurados.Location = new System.Drawing.Point(398, 51);
+            this.btnAsignarJurados.Location = new System.Drawing.Point(382, 31);
             this.btnAsignarJurados.Name = "btnAsignarJurados";
             this.btnAsignarJurados.Size = new System.Drawing.Size(86, 23);
             this.btnAsignarJurados.TabIndex = 3;
@@ -119,10 +108,8 @@
             // 
             // gbJurado
             // 
-            this.gbJurado.Controls.Add(this.txtNombreJurado2);
-            this.gbJurado.Controls.Add(this.label2);
-            this.gbJurado.Controls.Add(this.txtCodigoJurado2);
-            this.gbJurado.Controls.Add(this.label3);
+            this.gbJurado.Controls.Add(this.label4);
+            this.gbJurado.Controls.Add(this.comboJurado);
             this.gbJurado.Controls.Add(this.txtNombreJurado1);
             this.gbJurado.Controls.Add(this.labNombre);
             this.gbJurado.Controls.Add(this.txtCodigoJurado1);
@@ -130,14 +117,31 @@
             this.gbJurado.Controls.Add(this.btnAsignarJurados);
             this.gbJurado.Location = new System.Drawing.Point(13, 84);
             this.gbJurado.Name = "gbJurado";
-            this.gbJurado.Size = new System.Drawing.Size(522, 112);
+            this.gbJurado.Size = new System.Drawing.Size(522, 102);
             this.gbJurado.TabIndex = 6;
             this.gbJurado.TabStop = false;
             this.gbJurado.Text = "Jurado";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(64, 65);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Jurado existente: ";
+            // 
+            // comboJurado
+            // 
+            this.comboJurado.FormattingEnabled = true;
+            this.comboJurado.Location = new System.Drawing.Point(160, 62);
+            this.comboJurado.Name = "comboJurado";
+            this.comboJurado.Size = new System.Drawing.Size(203, 21);
+            this.comboJurado.TabIndex = 12;
+            // 
             // txtNombreJurado1
             // 
-            this.txtNombreJurado1.Location = new System.Drawing.Point(73, 28);
+            this.txtNombreJurado1.Location = new System.Drawing.Point(117, 29);
             this.txtNombreJurado1.Name = "txtNombreJurado1";
             this.txtNombreJurado1.Size = new System.Drawing.Size(100, 20);
             this.txtNombreJurado1.TabIndex = 7;
@@ -145,7 +149,7 @@
             // labNombre
             // 
             this.labNombre.AutoSize = true;
-            this.labNombre.Location = new System.Drawing.Point(20, 30);
+            this.labNombre.Location = new System.Drawing.Point(64, 31);
             this.labNombre.Name = "labNombre";
             this.labNombre.Size = new System.Drawing.Size(47, 13);
             this.labNombre.TabIndex = 6;
@@ -153,7 +157,7 @@
             // 
             // txtCodigoJurado1
             // 
-            this.txtCodigoJurado1.Location = new System.Drawing.Point(259, 27);
+            this.txtCodigoJurado1.Location = new System.Drawing.Point(263, 31);
             this.txtCodigoJurado1.Name = "txtCodigoJurado1";
             this.txtCodigoJurado1.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoJurado1.TabIndex = 5;
@@ -161,115 +165,26 @@
             // labCedula
             // 
             this.labCedula.AutoSize = true;
-            this.labCedula.Location = new System.Drawing.Point(210, 31);
+            this.labCedula.Location = new System.Drawing.Point(223, 31);
             this.labCedula.Name = "labCedula";
             this.labCedula.Size = new System.Drawing.Size(43, 13);
             this.labCedula.TabIndex = 4;
             this.labCedula.Text = "Cédula:";
             // 
-            // gbPropuestas
-            // 
-            this.gbPropuestas.Controls.Add(this.cbPropuestas);
-            this.gbPropuestas.Location = new System.Drawing.Point(15, 202);
-            this.gbPropuestas.Name = "gbPropuestas";
-            this.gbPropuestas.Size = new System.Drawing.Size(158, 52);
-            this.gbPropuestas.TabIndex = 7;
-            this.gbPropuestas.TabStop = false;
-            this.gbPropuestas.Text = "Propuestas";
-            // 
-            // cbPropuestas
-            // 
-            this.cbPropuestas.FormattingEnabled = true;
-            this.cbPropuestas.Location = new System.Drawing.Point(12, 19);
-            this.cbPropuestas.Name = "cbPropuestas";
-            this.cbPropuestas.Size = new System.Drawing.Size(130, 21);
-            this.cbPropuestas.TabIndex = 0;
-            // 
-            // gbTrabajos
-            // 
-            this.gbTrabajos.Controls.Add(this.cbTrabajos);
-            this.gbTrabajos.Location = new System.Drawing.Point(179, 202);
-            this.gbTrabajos.Name = "gbTrabajos";
-            this.gbTrabajos.Size = new System.Drawing.Size(170, 52);
-            this.gbTrabajos.TabIndex = 8;
-            this.gbTrabajos.TabStop = false;
-            this.gbTrabajos.Text = "Trabajos";
-            // 
-            // cbTrabajos
-            // 
-            this.cbTrabajos.FormattingEnabled = true;
-            this.cbTrabajos.Location = new System.Drawing.Point(15, 19);
-            this.cbTrabajos.Name = "cbTrabajos";
-            this.cbTrabajos.Size = new System.Drawing.Size(139, 21);
-            this.cbTrabajos.TabIndex = 0;
-            // 
-            // cbJurados
-            // 
-            this.cbJurados.FormattingEnabled = true;
-            this.cbJurados.Location = new System.Drawing.Point(18, 19);
-            this.cbJurados.Name = "cbJurados";
-            this.cbJurados.Size = new System.Drawing.Size(147, 21);
-            this.cbJurados.TabIndex = 9;
-            // 
-            // gbJurados
-            // 
-            this.gbJurados.Controls.Add(this.cbJurados);
-            this.gbJurados.Location = new System.Drawing.Point(355, 202);
-            this.gbJurados.Name = "gbJurados";
-            this.gbJurados.Size = new System.Drawing.Size(181, 52);
-            this.gbJurados.TabIndex = 9;
-            this.gbJurados.TabStop = false;
-            this.gbJurados.Text = "Jurados";
-            // 
             // grilla
             // 
             this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(11, 260);
+            this.grilla.Location = new System.Drawing.Point(11, 204);
             this.grilla.Name = "grilla";
             this.grilla.Size = new System.Drawing.Size(523, 252);
             this.grilla.TabIndex = 10;
-            // 
-            // txtNombreJurado2
-            // 
-            this.txtNombreJurado2.Location = new System.Drawing.Point(73, 54);
-            this.txtNombreJurado2.Name = "txtNombreJurado2";
-            this.txtNombreJurado2.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreJurado2.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Nombre:";
-            // 
-            // txtCodigoJurado2
-            // 
-            this.txtCodigoJurado2.Location = new System.Drawing.Point(259, 53);
-            this.txtCodigoJurado2.Name = "txtCodigoJurado2";
-            this.txtCodigoJurado2.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigoJurado2.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(210, 57);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Cédula:";
             // 
             // GUIAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 530);
+            this.ClientSize = new System.Drawing.Size(546, 466);
             this.Controls.Add(this.grilla);
-            this.Controls.Add(this.gbJurados);
-            this.Controls.Add(this.gbTrabajos);
-            this.Controls.Add(this.gbPropuestas);
             this.Controls.Add(this.gbJurado);
             this.Controls.Add(this.gbEquipo);
             this.Name = "GUIAdministrador";
@@ -278,9 +193,6 @@
             this.gbEquipo.PerformLayout();
             this.gbJurado.ResumeLayout(false);
             this.gbJurado.PerformLayout();
-            this.gbPropuestas.ResumeLayout(false);
-            this.gbTrabajos.ResumeLayout(false);
-            this.gbJurados.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
 
@@ -299,16 +211,8 @@
         private System.Windows.Forms.Label labCedula;
         private System.Windows.Forms.TextBox txtNombreJurado1;
         private System.Windows.Forms.Label labNombre;
-        private System.Windows.Forms.GroupBox gbPropuestas;
-        private System.Windows.Forms.GroupBox gbTrabajos;
-        private System.Windows.Forms.ComboBox cbPropuestas;
-        private System.Windows.Forms.ComboBox cbTrabajos;
-        private System.Windows.Forms.ComboBox cbJurados;
-        private System.Windows.Forms.GroupBox gbJurados;
         private System.Windows.Forms.DataGridView grilla;
-        private System.Windows.Forms.TextBox txtNombreJurado2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCodigoJurado2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboJurado;
     }
 }

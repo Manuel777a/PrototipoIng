@@ -37,7 +37,15 @@ namespace Ingenieria_Software_Prototipo
         }
         public void setTrabajoDeGrado(TrabajoDeGrado tg)
         {
-            trabajoDeGrado = tg;
+            if(propuesta==null)
+            {
+                throw new Exception("No ha subido una propuesta");
+            }
+            else
+            {
+                trabajoDeGrado = tg;
+            }
+            
         }
 
         public TrabajoDeGrado darTrabajoDeGrado()

@@ -69,9 +69,9 @@ namespace Ingenieria_Software_Prototipo
                 txtTituloTrabajo.Text = trabajo.darTitulo();
                 txtRutaTrabajo.Text = trabajo.darRuta();
                 txtObservacionesTrabajo.Text = trabajo.darObservaciones();
-                cbModalidadTrabajo.Items.Add(trabajo.darModalidad());
-                cbCalificacionTrabajo.Items.Add(trabajo.darCalificacion());
-                dtpTrabajo.Value = trabajo.darFechaEntrega();
+                cbModalidadTrabajo.SelectedItem = trabajo.darModalidad();
+                cbCalificacionTrabajo.SelectedItem = trabajo.darCalificacion();
+               // dtpTrabajo.Value = trabajo.darFechaEntrega();
             }
 
         }
@@ -85,7 +85,7 @@ namespace Ingenieria_Software_Prototipo
                 return;
             }
 
-            else if (comboJurado.SelectedItem == null || txtCodigoJurado1.Text ==null || txtCodigoJurado1.Text.Equals(""))
+            if( comboJurado.SelectedItem == null && (txtCodigoJurado1.Text ==null && txtCodigoJurado1.Text.Equals("")))
             {
                 MessageBox.Show("ERROR. Debe escoger un jurado");
                 return;

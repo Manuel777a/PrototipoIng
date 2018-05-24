@@ -24,19 +24,17 @@ namespace Ingenieria_Software_Prototipo
             txtNom2.Text = equipo.darEstudiantes[1].ToString();
             txtNom3.Text = equipo.darEstudiantes[2].ToString();
             txtNom4.Text = equipo.darEstudiantes[3].ToString();
-            cargarPropuesta();
+            cargar();
             comboBoxCalificacion.Enabled = false;
             cmbCalTra.Enabled = false;            
         }
-        public void cargarPropuesta()
+        public void cargar()
         {
             Propuesta p = equipo.darPropuesta();
             if(p==null)
             {
                 textBoxRuta.ReadOnly = false;
-                textBoxTitulo.ReadOnly = false;
-
-                            
+                textBoxTitulo.ReadOnly = false;                            
             }
             else
             {
@@ -53,6 +51,13 @@ namespace Ingenieria_Software_Prototipo
                 comboBoxModalidad.Enabled = false;
                 btnSubirPropuesta.Enabled = false;
             }
+            TrabajoDeGrado t = equipo.darTrabajoDeGrado();
+            if(t!=null)
+            {
+                axAcroPDF2.LoadFile(t.darRuta());
+                cmbModalidadTra.SelectedItem = t.darModalidad();
+                cmbCalTra.SelectedItem = t.darCalificacion();
+            }                      
         }      
         private void button1_Click(object sender, EventArgs e)
         {
@@ -68,7 +73,7 @@ namespace Ingenieria_Software_Prototipo
                 string modalidadd = (string)comboBoxModalidad.SelectedItem;
                 Propuesta p = new Propuesta(titulo, modalidadd, ruta);
                 equipo.asignarPropuestaDeGrado(p);
-                cargarPropuesta();
+                cargar();
             }
         }
 
@@ -100,6 +105,24 @@ namespace Ingenieria_Software_Prototipo
             btnSubirPropuesta.Enabled = true;
             textBoxTitulo.ReadOnly = false;
             comboBoxModalidad.Enabled = true;
+        }
+
+        private void btnSubirTrabajo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                    string ruta = txtRutaATrabajo.Text;
+                    string titulo = txtTitTrabajoGrado.Text;
+                    string modalidad = (string)cmbModalidadTra.SelectedItem;
+                    TrabajoDeGrado t = new TrabajoDeGrado(titulo, modalidad, ruta);
+                    equipo.setTrabajoDeGrado(t);
+                 axAcroPDF2.LoadFile(ruta);              
+            }
+            catch(Exception ee)
+            {
+                MessageBox.Show(ee.Message);
+            }
+           
         }
 
         private void buttonExaminar_Click(object sender, EventArgs e)

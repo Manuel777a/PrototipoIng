@@ -501,6 +501,7 @@
             this.btnSubirTrabajo.TabIndex = 1;
             this.btnSubirTrabajo.Text = "Quiero subir un trabajo";
             this.btnSubirTrabajo.UseVisualStyleBackColor = true;
+            this.btnSubirTrabajo.Click += new System.EventHandler(this.btnSubirTrabajo_Click);
             // 
             // label14
             // 

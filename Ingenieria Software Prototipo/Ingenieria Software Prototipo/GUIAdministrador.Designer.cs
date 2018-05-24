@@ -42,6 +42,7 @@
             this.txtCodigoJurado1 = new System.Windows.Forms.TextBox();
             this.labCedula = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnActualizarPropuesta = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.txtObservacionesPropuesta = new System.Windows.Forms.TextBox();
             this.dtpFechaEntregaPropuesta = new System.Windows.Forms.DateTimePicker();
@@ -55,6 +56,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtTituloPropuesta = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnActualizarTrabajo = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txtObservacionesTrabajo = new System.Windows.Forms.TextBox();
             this.dtpTrabajo = new System.Windows.Forms.DateTimePicker();
@@ -67,8 +69,6 @@
             this.cbModalidadTrabajo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtTituloTrabajo = new System.Windows.Forms.TextBox();
-            this.btnActualizarPropuesta = new System.Windows.Forms.Button();
-            this.btnActualizarTrabajo = new System.Windows.Forms.Button();
             this.gbEquipo.SuspendLayout();
             this.gbJurado.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -221,6 +221,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Propuesta de Grado";
             // 
+            // btnActualizarPropuesta
+            // 
+            this.btnActualizarPropuesta.Location = new System.Drawing.Point(369, 18);
+            this.btnActualizarPropuesta.Name = "btnActualizarPropuesta";
+            this.btnActualizarPropuesta.Size = new System.Drawing.Size(123, 23);
+            this.btnActualizarPropuesta.TabIndex = 18;
+            this.btnActualizarPropuesta.Text = "Actualizar";
+            this.btnActualizarPropuesta.UseVisualStyleBackColor = true;
+            this.btnActualizarPropuesta.Click += new System.EventHandler(this.btnActualizarPropuesta_Click);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -356,6 +366,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Trabajo de grado";
             // 
+            // btnActualizarTrabajo
+            // 
+            this.btnActualizarTrabajo.Location = new System.Drawing.Point(369, 16);
+            this.btnActualizarTrabajo.Name = "btnActualizarTrabajo";
+            this.btnActualizarTrabajo.Size = new System.Drawing.Size(123, 23);
+            this.btnActualizarTrabajo.TabIndex = 19;
+            this.btnActualizarTrabajo.Text = "Actualizar";
+            this.btnActualizarTrabajo.UseVisualStyleBackColor = true;
+            this.btnActualizarTrabajo.Click += new System.EventHandler(this.btnActualizarTrabajo_Click);
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -395,9 +415,10 @@
             this.cbCalificacionTrabajo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCalificacionTrabajo.FormattingEnabled = true;
             this.cbCalificacionTrabajo.Items.AddRange(new object[] {
+            "Laureada",
+            "Meritoria",
             "Aprobada",
-            "Devuelta para Correciones",
-            "No aceptada"});
+            "Devuelta Para Correcciones"});
             this.cbCalificacionTrabajo.Location = new System.Drawing.Point(99, 101);
             this.cbCalificacionTrabajo.Name = "cbCalificacionTrabajo";
             this.cbCalificacionTrabajo.Size = new System.Drawing.Size(152, 21);
@@ -468,26 +489,6 @@
             this.txtTituloTrabajo.ReadOnly = true;
             this.txtTituloTrabajo.Size = new System.Drawing.Size(264, 20);
             this.txtTituloTrabajo.TabIndex = 4;
-            // 
-            // btnActualizarPropuesta
-            // 
-            this.btnActualizarPropuesta.Location = new System.Drawing.Point(369, 15);
-            this.btnActualizarPropuesta.Name = "btnActualizarPropuesta";
-            this.btnActualizarPropuesta.Size = new System.Drawing.Size(123, 23);
-            this.btnActualizarPropuesta.TabIndex = 18;
-            this.btnActualizarPropuesta.Text = "Actualizar";
-            this.btnActualizarPropuesta.UseVisualStyleBackColor = true;
-            this.btnActualizarPropuesta.Click += new System.EventHandler(this.btnActualizarPropuesta_Click);
-            // 
-            // btnActualizarTrabajo
-            // 
-            this.btnActualizarTrabajo.Location = new System.Drawing.Point(369, 20);
-            this.btnActualizarTrabajo.Name = "btnActualizarTrabajo";
-            this.btnActualizarTrabajo.Size = new System.Drawing.Size(123, 23);
-            this.btnActualizarTrabajo.TabIndex = 19;
-            this.btnActualizarTrabajo.Text = "Actualizar";
-            this.btnActualizarTrabajo.UseVisualStyleBackColor = true;
-            this.btnActualizarTrabajo.Click += new System.EventHandler(this.btnActualizarTrabajo_Click);
             // 
             // GUIAdministrador
             // 

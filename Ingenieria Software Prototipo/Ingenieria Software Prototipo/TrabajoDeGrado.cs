@@ -44,7 +44,7 @@ namespace Ingenieria_Software_Prototipo
         public String darRuta()
         {
             return rutaDocumento;
-        }
+        }   
         public String darModalidad()
         {
             return modalidad;

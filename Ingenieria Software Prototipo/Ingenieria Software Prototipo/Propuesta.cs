@@ -21,7 +21,9 @@ namespace Ingenieria_Software_Prototipo
         {
             Aprobada,
             DevueltaParaCorreciones,
-            NoAceptada
+            NoAceptada,
+            PorRevisar
+            
         }
 
         private String titulo, modalidad,observaciones,calificacion,rutaDocumento;
@@ -33,6 +35,7 @@ namespace Ingenieria_Software_Prototipo
             this.titulo = titulo;
             this.modalidad = modalidad;
             this.rutaDocumento = rutaDocumento;
+            calificacion = Propuesta.Calificaciones.PorRevisar.ToString();
         }
 
         public String darTitulo

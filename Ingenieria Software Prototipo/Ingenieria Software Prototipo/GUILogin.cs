@@ -34,6 +34,7 @@ namespace Ingenieria_Software_Prototipo
                 }
                 else if(soy.Equals("Estudiante"))
                 {
+                    GUIEstudiante interfazEstudiante = new GUIEstudiante(programaAcademico);
                     // lanzar la interfaz estudiante pasandole por parametro el programa academico
 
                 }

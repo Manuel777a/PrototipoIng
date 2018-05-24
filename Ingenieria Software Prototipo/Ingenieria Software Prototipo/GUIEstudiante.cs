@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Ingenieria_Software_Prototipo
 {
-    public partial class Form1 : Form
+    public partial class GUIEstudiante : Form
     {
-        public Form1()
+        private ProgramaAcademico programaAcademico;
+        public GUIEstudiante(ProgramaAcademico pPrograma)   
         {
             InitializeComponent();
+            programaAcademico = pPrograma;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

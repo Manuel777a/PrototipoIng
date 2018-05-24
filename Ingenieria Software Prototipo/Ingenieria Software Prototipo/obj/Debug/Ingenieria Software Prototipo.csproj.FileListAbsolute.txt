@@ -42,3 +42,11 @@ C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo
 C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.ResolveComReference.cache
 C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.exe
 C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.pdb
+C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria Software Prototipo.csproj.ResolveComReference.cache
+C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.Form1.resources
+C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUIGeneracionEquipo.resources
+C:\Users\USER\Documents\GitHub\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUIAdministrador.resources

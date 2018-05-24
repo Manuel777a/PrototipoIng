@@ -14,7 +14,7 @@ namespace Ingenieria_Software_Prototipo
     {
         private Equipo equipo;
         private ProgramaAcademico programaAcademico;
-        public string ruta;
+        public string rutaP,rutaT;
         public GUIEstudiante(ProgramaAcademico pPrograma,Equipo pEquipo)   
         {
             InitializeComponent();
@@ -25,6 +25,7 @@ namespace Ingenieria_Software_Prototipo
             txtNom3.Text = equipo.darEstudiantes[2].ToString();
             txtNom4.Text = equipo.darEstudiantes[3].ToString();
             cargarPropuesta();
+            cargarTrabajo();
         }
         public void cargarPropuesta()
         {
@@ -41,10 +42,22 @@ namespace Ingenieria_Software_Prototipo
                 textBoxTitulo.Text = p.darTitulo;
                 comboBoxCalificacion.SelectedItem = p.darCalificacion;
                 comboBoxModalidad.SelectedItem = p.darModalidad;
-                ruta = p.darRutaDocumento;
-             //   dtpFechaEntrega.Value = p.darFechaEntrega;
-                axAcroPDF1.LoadFile(ruta);
+                rutaP = p.darRutaDocumento;
+                 //dtpFechaEntrega.Value = p.darFechaEntrega;
+                axAcroPDF1.LoadFile(rutaP);
             }
+        }
+
+        public void cargarTrabajo()
+        {
+            
+            //TrabajoDeGrado t = equipo.darTrabajoDeGrado();
+            //txtTitTrabajoGrado.Text = textBoxTitulo.Text;
+            //cmbModalidadTra.SelectedItem = comboBoxModalidad;
+            ////cmbCalTra.SelectedItem = t.darCalificacion();
+            //rutaT = t.darRuta();
+            //axAcroPDF2.LoadFile(rutaT);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,7 +76,34 @@ namespace Ingenieria_Software_Prototipo
                 equipo.asignarPropuestaDeGrado(p);
                 cargarPropuesta();
             }
-        }        
+        }
+
+        
+
+        private void btnExaminarT_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrir = new OpenFileDialog();
+            abrir.Filter = "Archivos txt (*.pdf) | *.pdf";
+            abrir.Title = "Seleccione isométrico";
+            abrir.RestoreDirectory = true;
+
+            if (abrir.ShowDialog() == DialogResult.OK)
+            {
+                rutaT = abrir.FileName;
+                txtRutaATrabajo.Text = rutaT;
+            }
+            else
+            {
+                MessageBox.Show("No selecciono la ruta");
+            }
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void buttonExaminar_Click(object sender, EventArgs e)
         {
             OpenFileDialog abrir = new OpenFileDialog();
@@ -73,13 +113,15 @@ namespace Ingenieria_Software_Prototipo
 
             if (abrir.ShowDialog() == DialogResult.OK)
             {
-                ruta = abrir.FileName;
-                textBoxRuta.Text = ruta;
+                rutaP = abrir.FileName;
+                textBoxRuta.Text = rutaP;
             }
             else
             {
                 MessageBox.Show("No selecciono la ruta");
             }
         }
+
+        
     }
 }

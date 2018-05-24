@@ -38,7 +38,6 @@ namespace Ingenieria_Software_Prototipo
                     {
                         GUIGeneracionEquipo interfazGeneracionEquipo = new GUIGeneracionEquipo(programaAcademico);
                         interfazGeneracionEquipo.Show();
-
                     }
                     else
                     {
@@ -58,7 +57,7 @@ namespace Ingenieria_Software_Prototipo
             }
             else
             {
-                MessageBox.Show("Error , Llene todos los campos para realizar Loggin");
+                MessageBox.Show("Error , Llene todos los campos para realizar Login");
             }
 
 

@@ -67,3 +67,7 @@ C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Softwa
 C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Ingenieria_Software_Prototipo.GUIAdministrador.resources
 C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Interop.AcroPDFLib.dll
 C:\Users\ss\Desktop\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\islas\Documents\PrototipoIng\PrototipoIng\Ingenieria Software Prototipo\Ingenieria Software Prototipo\bin\Debug\AxInterop.AcroPDFLib.dll

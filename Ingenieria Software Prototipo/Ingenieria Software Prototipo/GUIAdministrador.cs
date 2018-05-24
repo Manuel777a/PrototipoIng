@@ -17,15 +17,36 @@ namespace Ingenieria_Software_Prototipo
         {
             InitializeComponent();
             programaAcademico = pPrograma;
-            llenarCombo();
+           // llenarCombo();
         }
 
         private void btnConsultarPropuesta_Click(object sender, EventArgs e)
         {
+
             if (txtCodigoEst.Text.Equals("") || txtCodigoEst.Text == null)
             {
                 MessageBox.Show("ERROR. Ingrese el código del estudiante");
             }
+
+            Equipo equipo = programaAcademico.buscarEquipo(txtCodigoEst.Text);
+            Propuesta propuesta = equipo.darPropuesta();
+            if(propuesta!=null)
+            {
+                txtTituloPropuesta.Text = propuesta.darTitulo;
+                txtRutaPropuesta.Text = propuesta.darRutaDocumento;
+                txtObservacionesPropuesta.Text = propuesta.darObservaciones;
+                cbCalificacionPropuesta.SelectedItem = propuesta.darCalificacion;
+                cbModalidadPropuesta.SelectedItem = propuesta.darModalidad;
+                // dtpFechaEntregaPropuesta.Value = propuesta.darFechaEntrega;
+            }
+            else
+            {
+                MessageBox.Show("El Estudiante no ha subido ninguna propuesta");
+            }
+
+
+
+
 
         }
 
@@ -43,21 +64,14 @@ namespace Ingenieria_Software_Prototipo
             }
             else
             {
-                grilla.Rows[0].HeaderCell.Value = "Título";
-
-                grilla.Rows[1].HeaderCell.Value = "Modalidad";
-
-                grilla.Rows[2].HeaderCell.Value = "Observaciones";
-
-                grilla.Rows[3].HeaderCell.Value = "Fecha de entrega";
-
-                grilla.Rows[4].HeaderCell.Value = "Calificacion";
-
-                grilla.Rows[5].HeaderCell.Value = "Ruta del documento";
-
-                //for(int i = 0; i <  )
-
+                txtTituloTrabajo.Text = trabajo.darTitulo();
+                txtRutaTrabajo.Text = trabajo.darRuta();
+                txtObservacionesTrabajo.Text = trabajo.darObservaciones();
+                cbModalidadTrabajo.Items.Add(trabajo.darModalidad());
+                cbCalificacionTrabajo.Items.Add(trabajo.darCalificacion());
+                dtpTrabajo.Value = trabajo.darFechaEntrega();
             }
+
         }
 
         private void btnAsignarJurado_Click(object sender, EventArgs e)

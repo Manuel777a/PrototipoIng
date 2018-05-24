@@ -41,16 +41,42 @@
             this.labNombre = new System.Windows.Forms.Label();
             this.txtCodigoJurado1 = new System.Windows.Forms.TextBox();
             this.labCedula = new System.Windows.Forms.Label();
-            this.grilla = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtObservacionesPropuesta = new System.Windows.Forms.TextBox();
+            this.dtpFechaEntregaPropuesta = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbCalificacionPropuesta = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtRutaPropuesta = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbModalidadPropuesta = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtTituloPropuesta = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtObservacionesTrabajo = new System.Windows.Forms.TextBox();
+            this.dtpTrabajo = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbCalificacionTrabajo = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtRutaTrabajo = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cbModalidadTrabajo = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtTituloTrabajo = new System.Windows.Forms.TextBox();
             this.gbEquipo.SuspendLayout();
             this.gbJurado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 30);
+            this.label1.Location = new System.Drawing.Point(8, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 13);
             this.label1.TabIndex = 0;
@@ -58,7 +84,7 @@
             // 
             // btnConsultarPropuesta
             // 
-            this.btnConsultarPropuesta.Location = new System.Drawing.Point(246, 25);
+            this.btnConsultarPropuesta.Location = new System.Drawing.Point(233, 25);
             this.btnConsultarPropuesta.Name = "btnConsultarPropuesta";
             this.btnConsultarPropuesta.Size = new System.Drawing.Size(114, 23);
             this.btnConsultarPropuesta.TabIndex = 1;
@@ -68,7 +94,7 @@
             // 
             // btnConsultarTrabajoFinal
             // 
-            this.btnConsultarTrabajoFinal.Location = new System.Drawing.Point(381, 25);
+            this.btnConsultarTrabajoFinal.Location = new System.Drawing.Point(353, 25);
             this.btnConsultarTrabajoFinal.Name = "btnConsultarTrabajoFinal";
             this.btnConsultarTrabajoFinal.Size = new System.Drawing.Size(125, 23);
             this.btnConsultarTrabajoFinal.TabIndex = 2;
@@ -88,7 +114,7 @@
             // 
             // txtCodigoEst
             // 
-            this.txtCodigoEst.Location = new System.Drawing.Point(140, 27);
+            this.txtCodigoEst.Location = new System.Drawing.Point(127, 27);
             this.txtCodigoEst.Name = "txtCodigoEst";
             this.txtCodigoEst.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoEst.TabIndex = 4;
@@ -101,7 +127,7 @@
             this.gbEquipo.Controls.Add(this.btnConsultarPropuesta);
             this.gbEquipo.Location = new System.Drawing.Point(12, 12);
             this.gbEquipo.Name = "gbEquipo";
-            this.gbEquipo.Size = new System.Drawing.Size(523, 65);
+            this.gbEquipo.Size = new System.Drawing.Size(499, 65);
             this.gbEquipo.TabIndex = 5;
             this.gbEquipo.TabStop = false;
             this.gbEquipo.Text = "Equipo";
@@ -115,9 +141,9 @@
             this.gbJurado.Controls.Add(this.txtCodigoJurado1);
             this.gbJurado.Controls.Add(this.labCedula);
             this.gbJurado.Controls.Add(this.btnAsignarJurados);
-            this.gbJurado.Location = new System.Drawing.Point(13, 84);
+            this.gbJurado.Location = new System.Drawing.Point(13, 478);
             this.gbJurado.Name = "gbJurado";
-            this.gbJurado.Size = new System.Drawing.Size(522, 102);
+            this.gbJurado.Size = new System.Drawing.Size(498, 102);
             this.gbJurado.TabIndex = 6;
             this.gbJurado.TabStop = false;
             this.gbJurado.Text = "Jurado";
@@ -171,20 +197,281 @@
             this.labCedula.TabIndex = 4;
             this.labCedula.Text = "Cédula:";
             // 
-            // grilla
+            // groupBox1
             // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(11, 204);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(523, 252);
-            this.grilla.TabIndex = 10;
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.txtObservacionesPropuesta);
+            this.groupBox1.Controls.Add(this.dtpFechaEntregaPropuesta);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.cbCalificacionPropuesta);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtRutaPropuesta);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.cbModalidadPropuesta);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.txtTituloPropuesta);
+            this.groupBox1.Location = new System.Drawing.Point(13, 83);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(498, 165);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Propuesta de Grado";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(272, 78);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 13);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Observaciones: ";
+            // 
+            // txtObservacionesPropuesta
+            // 
+            this.txtObservacionesPropuesta.Location = new System.Drawing.Point(272, 94);
+            this.txtObservacionesPropuesta.Multiline = true;
+            this.txtObservacionesPropuesta.Name = "txtObservacionesPropuesta";
+            this.txtObservacionesPropuesta.Size = new System.Drawing.Size(220, 47);
+            this.txtObservacionesPropuesta.TabIndex = 16;
+            // 
+            // dtpFechaEntregaPropuesta
+            // 
+            this.dtpFechaEntregaPropuesta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaEntregaPropuesta.Location = new System.Drawing.Point(99, 128);
+            this.dtpFechaEntregaPropuesta.Name = "dtpFechaEntregaPropuesta";
+            this.dtpFechaEntregaPropuesta.Size = new System.Drawing.Size(152, 20);
+            this.dtpFechaEntregaPropuesta.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "&Fecha Entrega:";
+            // 
+            // cbCalificacionPropuesta
+            // 
+            this.cbCalificacionPropuesta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalificacionPropuesta.FormattingEnabled = true;
+            this.cbCalificacionPropuesta.Items.AddRange(new object[] {
+            "Aprobada",
+            "Devuelta para Correciones",
+            "No aceptada"});
+            this.cbCalificacionPropuesta.Location = new System.Drawing.Point(99, 101);
+            this.cbCalificacionPropuesta.Name = "cbCalificacionPropuesta";
+            this.cbCalificacionPropuesta.Size = new System.Drawing.Size(152, 21);
+            this.cbCalificacionPropuesta.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 104);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "&Calificacion:";
+            // 
+            // txtRutaPropuesta
+            // 
+            this.txtRutaPropuesta.Location = new System.Drawing.Point(99, 48);
+            this.txtRutaPropuesta.Name = "txtRutaPropuesta";
+            this.txtRutaPropuesta.ReadOnly = true;
+            this.txtRutaPropuesta.Size = new System.Drawing.Size(260, 20);
+            this.txtRutaPropuesta.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "&Ruta Archivo:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(21, 77);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "&Modalidad:";
+            // 
+            // cbModalidadPropuesta
+            // 
+            this.cbModalidadPropuesta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModalidadPropuesta.FormattingEnabled = true;
+            this.cbModalidadPropuesta.Items.AddRange(new object[] {
+            "Monografia",
+            "Asistencia De Investigacion",
+            "Trabajo de Investigacion",
+            "Opcion Emprendimiento"});
+            this.cbModalidadPropuesta.Location = new System.Drawing.Point(99, 74);
+            this.cbModalidadPropuesta.Name = "cbModalidadPropuesta";
+            this.cbModalidadPropuesta.Size = new System.Drawing.Size(152, 21);
+            this.cbModalidadPropuesta.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(21, 25);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(36, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "&Titulo:";
+            // 
+            // txtTituloPropuesta
+            // 
+            this.txtTituloPropuesta.Location = new System.Drawing.Point(99, 18);
+            this.txtTituloPropuesta.Name = "txtTituloPropuesta";
+            this.txtTituloPropuesta.ReadOnly = true;
+            this.txtTituloPropuesta.Size = new System.Drawing.Size(264, 20);
+            this.txtTituloPropuesta.TabIndex = 4;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.txtObservacionesTrabajo);
+            this.groupBox2.Controls.Add(this.dtpTrabajo);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.cbCalificacionTrabajo);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.txtRutaTrabajo);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.cbModalidadTrabajo);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.txtTituloTrabajo);
+            this.groupBox2.Location = new System.Drawing.Point(13, 254);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(498, 201);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Trabajo de grado";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(257, 85);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(84, 13);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Observaciones: ";
+            // 
+            // txtObservacionesTrabajo
+            // 
+            this.txtObservacionesTrabajo.Location = new System.Drawing.Point(257, 101);
+            this.txtObservacionesTrabajo.Multiline = true;
+            this.txtObservacionesTrabajo.Name = "txtObservacionesTrabajo";
+            this.txtObservacionesTrabajo.Size = new System.Drawing.Size(220, 47);
+            this.txtObservacionesTrabajo.TabIndex = 14;
+            // 
+            // dtpTrabajo
+            // 
+            this.dtpTrabajo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpTrabajo.Location = new System.Drawing.Point(99, 128);
+            this.dtpTrabajo.Name = "dtpTrabajo";
+            this.dtpTrabajo.Size = new System.Drawing.Size(152, 20);
+            this.dtpTrabajo.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(21, 128);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "&Fecha Entrega:";
+            // 
+            // cbCalificacionTrabajo
+            // 
+            this.cbCalificacionTrabajo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalificacionTrabajo.FormattingEnabled = true;
+            this.cbCalificacionTrabajo.Items.AddRange(new object[] {
+            "Aprobada",
+            "Devuelta para Correciones",
+            "No aceptada"});
+            this.cbCalificacionTrabajo.Location = new System.Drawing.Point(99, 101);
+            this.cbCalificacionTrabajo.Name = "cbCalificacionTrabajo";
+            this.cbCalificacionTrabajo.Size = new System.Drawing.Size(152, 21);
+            this.cbCalificacionTrabajo.TabIndex = 10;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(21, 104);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "&Calificacion:";
+            // 
+            // txtRutaTrabajo
+            // 
+            this.txtRutaTrabajo.Location = new System.Drawing.Point(99, 48);
+            this.txtRutaTrabajo.Name = "txtRutaTrabajo";
+            this.txtRutaTrabajo.ReadOnly = true;
+            this.txtRutaTrabajo.Size = new System.Drawing.Size(260, 20);
+            this.txtRutaTrabajo.TabIndex = 8;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(21, 51);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(72, 13);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "&Ruta Archivo:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(21, 77);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 13);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "&Modalidad:";
+            // 
+            // cbModalidadTrabajo
+            // 
+            this.cbModalidadTrabajo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModalidadTrabajo.FormattingEnabled = true;
+            this.cbModalidadTrabajo.Items.AddRange(new object[] {
+            "Monografia",
+            "Asistencia De Investigacion",
+            "Trabajo de Investigacion",
+            "Opcion Emprendimiento"});
+            this.cbModalidadTrabajo.Location = new System.Drawing.Point(99, 74);
+            this.cbModalidadTrabajo.Name = "cbModalidadTrabajo";
+            this.cbModalidadTrabajo.Size = new System.Drawing.Size(152, 21);
+            this.cbModalidadTrabajo.TabIndex = 5;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(21, 25);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "&Titulo:";
+            // 
+            // txtTituloTrabajo
+            // 
+            this.txtTituloTrabajo.Location = new System.Drawing.Point(99, 18);
+            this.txtTituloTrabajo.Name = "txtTituloTrabajo";
+            this.txtTituloTrabajo.ReadOnly = true;
+            this.txtTituloTrabajo.Size = new System.Drawing.Size(264, 20);
+            this.txtTituloTrabajo.TabIndex = 4;
             // 
             // GUIAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 466);
-            this.Controls.Add(this.grilla);
+            this.ClientSize = new System.Drawing.Size(575, 614);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbJurado);
             this.Controls.Add(this.gbEquipo);
             this.Name = "GUIAdministrador";
@@ -193,7 +480,10 @@
             this.gbEquipo.PerformLayout();
             this.gbJurado.ResumeLayout(false);
             this.gbJurado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -211,8 +501,33 @@
         private System.Windows.Forms.Label labCedula;
         private System.Windows.Forms.TextBox txtNombreJurado1;
         private System.Windows.Forms.Label labNombre;
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboJurado;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DateTimePicker dtpFechaEntregaPropuesta;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbCalificacionPropuesta;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtRutaPropuesta;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbModalidadPropuesta;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtTituloPropuesta;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtObservacionesPropuesta;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtObservacionesTrabajo;
+        private System.Windows.Forms.DateTimePicker dtpTrabajo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbCalificacionTrabajo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtRutaTrabajo;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cbModalidadTrabajo;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtTituloTrabajo;
     }
 }

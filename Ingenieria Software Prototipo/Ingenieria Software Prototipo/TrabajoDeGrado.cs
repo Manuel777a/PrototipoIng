@@ -37,7 +37,23 @@ namespace Ingenieria_Software_Prototipo
         //    jurados[0] = pJurado1;
         //    jurados[1] = pJurado2;
         //}
+        public String darTitulo()
+        {
+            return titulo;
+        }
+        public String darRuta()
+        {
+            return rutaDocumento;
+        }
+        public String darModalidad()
+        {
+            return modalidad;
+        }
 
+        public DateTime darFechaEntrega()
+        {
+            return fechaEntrega;
+        }
         public void asignarTiempoEntrega(DateTime tiempo)
         {
             fechaEntrega = tiempo;

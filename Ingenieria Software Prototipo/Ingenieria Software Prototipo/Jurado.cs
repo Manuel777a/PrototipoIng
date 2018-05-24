@@ -41,5 +41,10 @@ namespace Ingenieria_Software_Prototipo
         {
             TrabajosDeGrado.Add(pTrabajoDeGrado);
         }
+
+        public override String ToString()
+        {
+            return nombre + "   " + cedula;
+        }
     }
 }

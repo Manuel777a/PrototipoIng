@@ -59,11 +59,16 @@ namespace Ingenieria_Software_Prototipo
 
         private void btnAsignarJurado_Click(object sender, EventArgs e)
         {
+            if (comboJurado.SelectedItem == null || txtCodigoJurado1.Text ==null || txtCodigoJurado1.Text.Equals(""))
+            {
+                MessageBox.Show("ERROR. Debe escoger un jurado");
+            }
 
-            
-            programaAcademico.agregarJurado((Jurado)comboJurado.SelectedItem);
 
-           
+
+
+
+
 
 
             llenarCombo();
@@ -76,8 +81,9 @@ namespace Ingenieria_Software_Prototipo
             for (int i = 0; i < lista.Count; i++)
             {
                 Jurado j = lista[i];
-                
+
                 comboJurado.Items.Add(j);
+
             }
             
         }
